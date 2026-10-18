@@ -1,0 +1,329 @@
+/* --- Base Reset & Theme --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: rgba(5, 5, 5, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #fff;
+}
+
+/* --- Page Header --- */
+.results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 5% 100px 5%;
+}
+
+.page-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.gp-badge {
+    background-color: #222;
+    color: #E32219;
+    padding: 6px 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.page-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.red-line {
+    width: 80px;
+    height: 4px;
+    background-color: #E32219;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+/* --- Session Toggles (Race vs Quali) --- */
+.session-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.toggle-btn {
+    background: #111;
+    border: 1px solid #333;
+    color: #888;
+    padding: 12px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+.toggle-btn.active {
+    background: #E32219;
+    border-color: #E32219;
+    color: #fff;
+}
+
+.session-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.session-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Podium Showcase --- */
+.podium-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin-bottom: 80px;
+    height: 400px; /* Gives space for the steps */
+}
+
+.podium-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 250px;
+}
+
+.driver-portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #333;
+    margin-bottom: -20px; /* Overlaps the block */
+    z-index: 2;
+    background-color: #111;
+}
+
+.driver-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.podium-block {
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px 20px 10px;
+    border-top: 4px solid #333;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+/* Adjust Heights based on position */
+.p1 .podium-block { height: 220px; border-color: #FFD700; } /* Gold */
+.p2 .podium-block { height: 180px; border-color: #C0C0C0; } /* Silver */
+.p3 .podium-block { height: 150px; border-color: #CD7F32; } /* Bronze */
+
+.p1 .driver-portrait { width: 150px; height: 150px; border-color: #FFD700; }
+
+.pos-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #333;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+
+.podium-block h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.team-name {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.gap {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    background: #222;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* --- Classification List (Rows) --- */
+.classification-list {
+    margin-bottom: 40px;
+}
+
+.table-header {
+    display: flex;
+    padding: 0 30px 15px 30px;
+    border-bottom: 2px solid #222;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.result-row {
+    display: flex;
+    align-items: center;
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    border-left: 5px solid transparent;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.result-row:hover {
+    background-color: #111;
+    transform: translateX(5px);
+}
+
+/* Team Colors for the list */
+.ferrari { border-left-color: #E32219; }
+.redbull { border-left-color: #0600EF; }
+.mclaren { border-left-color: #FF8000; }
+.mercedes { border-left-color: #00A19B; }
+.aston { border-left-color: #006F62; }
+.dnf { border-left-color: #555; opacity: 0.6; } /* Faded for retired cars */
+
+/* Columns */
+.col-pos { width: 10%; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.2rem; color: #666; }
+.col-driver { width: 35%; font-size: 1.1rem; }
+.col-driver strong { color: #fff; }
+.car-no { color: #888; font-size: 0.85rem; margin-left: 8px; }
+.col-team { width: 25%; color: #aaa; font-size: 0.95rem; }
+.col-time { width: 20%; font-family: 'Inter', sans-serif; color: #fff; }
+.col-pts { width: 10%; text-align: right; font-weight: 700; color: #E32219; }
+
+/* --- Race Highlights --- */
+.race-highlights {
+    display: flex;
+    gap: 20px;
+}
+
+.highlight-box {
+    flex: 1;
+    background: #111;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #E32219;
+}
+
+.highlight-box h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.highlight-box p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* --- Scroll Animations --- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .page-header h1 { font-size: 2.5rem; }
+    .podium-showcase { align-items: center; height: auto; padding-top: 50px; margin-bottom: 40px; }
+    .p2, .p3 { transform: scale(0.85); margin-bottom: -30px; }
+    .col-team { display: none; }
+    .col-driver { width: 50%; }
+    .col-pos { width: 15%; }
+    .race-highlights { flex-direction: column; }
+}

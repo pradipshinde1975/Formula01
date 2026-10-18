@@ -1,0 +1,248 @@
+/* --- Base Reset & Theme --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: rgba(5, 5, 5, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #fff;
+}
+
+/* --- Page Header --- */
+.constructors-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 5% 100px 5%;
+}
+
+.page-header {
+    margin-bottom: 60px;
+}
+
+.page-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.red-line {
+    width: 80px;
+    height: 4px;
+    background-color: #E32219;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+/* --- Team Cards Layout --- */
+.team-card {
+    display: flex;
+    background-color: #111;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-left: 6px solid transparent; /* Used for team colors */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* Team Accent Colors */
+.ferrari { border-left-color: #E32219; }
+.mclaren { border-left-color: #FF8000; }
+.redbull { border-left-color: #0600EF; }
+
+.team-info {
+    width: 45%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.team-meta {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.team-meta p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.team-meta strong {
+    color: #fff;
+}
+
+.team-bio {
+    color: #999;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* --- Drivers Section (Zoom In/Out Effect) --- */
+.team-drivers {
+    width: 55%;
+    display: flex;
+}
+
+.driver-box {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.driver-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(80%);
+    /* This creates the smooth ZOOM IN effect on the image */
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.6s ease;
+}
+
+.driver-info-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    
+    /* Starts hidden and shrunk down */
+    opacity: 0;
+    transform: scale(0.8);
+    /* This creates the smooth ZOOM OUT effect on the text box */
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.17, 0.84, 0.44, 1.1);
+}
+
+/* HOVER TRIGGERS */
+.driver-box:hover .driver-img {
+    transform: scale(1.15); /* Image zooms IN */
+    filter: grayscale(0%);  /* Image gets full color */
+}
+
+.driver-box:hover .driver-info-overlay {
+    opacity: 1;             /* Info becomes visible */
+    transform: scale(1);    /* Info zooms OUT to normal size */
+}
+
+/* Driver Stats Styling */
+.driver-stats h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.driver-stats span {
+    display: block;
+    font-size: 1rem;
+    color: #E32219;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.stat-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.stat-grid strong {
+    color: #fff;
+    font-size: 1.3rem;
+    display: block;
+    margin-top: 5px;
+}
+
+/* --- Scroll Reveal Animation --- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 968px) {
+    .team-card {
+        flex-direction: column;
+    }
+    .team-info {
+        width: 100%;
+        padding: 30px;
+    }
+    .team-drivers {
+        width: 100%;
+        height: 400px; /* Fixed height for mobile display */
+    }
+    .page-header h1 {
+        font-size: 3rem;
+    }
+}

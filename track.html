@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Profile | Autodromo Nazionale Monza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">VELOCITYGP</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="news.html">Teams</a>
+            <a href="result.html">Results</a>
+            <a href="#" class="active">Tracks</a>
+        </nav>
+    </header>
+
+    <section class="track-hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1538356346215-626f2177be5c?q=80&w=2000&auto=format&fit=crop" alt="Monza Circuit">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content scroll-reveal">
+            <span class="country-badge">ITALY</span>
+            <h1>AUTODROMO NAZIONALE MONZA</h1>
+            <p class="nickname">"The Temple of Speed"</p>
+        </div>
+    </section>
+
+    <main class="track-container">
+        
+        <section class="stats-grid scroll-reveal">
+            <div class="stat-box">
+                <h4>CIRCUIT LENGTH</h4>
+                <p>5.793 <span>km</span></p>
+            </div>
+            <div class="stat-box">
+                <h4>RACE DISTANCE</h4>
+                <p>306.720 <span>km</span></p>
+            </div>
+            <div class="stat-box">
+                <h4>NUMBER OF LAPS</h4>
+                <p>53</p>
+            </div>
+            <div class="stat-box">
+                <h4>LAP RECORD</h4>
+                <p>1:21.046 <span>(R. Barrichello, 2004)</span></p>
+            </div>
+            <div class="stat-box">
+                <h4>FIRST GRAND PRIX</h4>
+                <p>1950</p>
+            </div>
+        </section>
+
+        <section class="track-layout-section scroll-reveal">
+            <div class="section-header">
+                <h2>CIRCUIT LAYOUT</h2>
+                <div class="red-line"></div>
+            </div>
+            <div class="layout-container">
+                <div class="telemetry-screen">
+                    <svg viewBox="0 0 800 400" class="track-svg">
+                        <path d="M 100 200 C 100 100, 300 100, 400 200 C 500 300, 700 300, 700 200 C 700 100, 500 50, 400 150 C 300 250, 100 300, 100 200 Z" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                        <line x1="100" y1="180" x2="100" y2="220" stroke="#E32219" stroke-width="4" />
+                        <path d="M 120 185 L 200 135" fill="none" stroke="#00A19B" stroke-width="4" stroke-dasharray="5,5" />
+                        <path d="M 500 280 L 650 250" fill="none" stroke="#00A19B" stroke-width="4" stroke-dasharray="5,5" />
+                    </svg>
+                    
+                    <div class="map-legend">
+                        <div class="legend-item"><span class="color-dot red"></span> Start / Finish</div>
+                        <div class="legend-item"><span class="color-dot green"></span> DRS Zones</div>
+                        <div class="legend-item"><span class="color-dot white"></span> Speed Trap</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sector-breakdown scroll-reveal">
+            <div class="section-header">
+                <h2>TECHNICAL BREAKDOWN</h2>
+                <div class="red-line"></div>
+            </div>
+
+            <div class="sector-tabs">
+                <button class="sector-btn active" data-target="sector-1">SECTOR 1</button>
+                <button class="sector-btn" data-target="sector-2">SECTOR 2</button>
+                <button class="sector-btn" data-target="sector-3">SECTOR 3</button>
+            </div>
+
+            <div class="sector-content-area">
+                
+                <div id="sector-1" class="sector-panel active">
+                    <div class="sector-info">
+                        <h3>THE MAIN STRAIGHT & RETTIFILO</h3>
+                        <p>The lap begins on one of the longest straights in Formula 1, with cars reaching speeds exceeding 350 km/h before aggressively slamming on the brakes for Turn 1 (Prima Variante). This chicane requires perfect car placement and provides the best overtaking opportunity on the track.</p>
+                        <ul class="key-corners">
+                            <li><strong>Turns 1 & 2:</strong> Variante del Rettifilo</li>
+                            <li><strong>Speed Trap:</strong> 352 km/h (End of straight)</li>
+                        </ul>
+                    </div>
+                    <div class="sector-image">
+                        <img src="https://www.grandprixgrandtours.com/wp-content/uploads/2024/12/Australia-Circuit-2025.webp" alt="Sector 1 Action">
+                    </div>
+                </div>
+
+                <div id="sector-2" class="sector-panel">
+                    <div class="sector-info">
+                        <h3>CURVA GRANDE & LESMOS</h3>
+                        <p>Sector 2 flows through the high-speed Curva Grande (Turn 3) into the second chicane, Variante della Roggia. Drivers then face the two Lesmo corners—medium-high speed right-handers that demand absolute precision. A slight misjudgment here carries massive speed penalties down the following straight.</p>
+                        <ul class="key-corners">
+                            <li><strong>Turn 3:</strong> Curva Grande</li>
+                            <li><strong>Turns 4 & 5:</strong> Variante della Roggia</li>
+                            <li><strong>Turns 6 & 7:</strong> Lesmo 1 & 2</li>
+                        </ul>
+                    </div>
+                    <div class="sector-image">
+                        <img src="https://www.racingcircuits.info/assets/images/maps/Europe/Italy/Monza/Monza-Bike2010.png" alt="Sector 2 Action">
+                    </div>
+                </div>
+
+                <div id="sector-3" class="sector-panel">
+                    <div class="sector-info">
+                        <h3>ASCARI & PARABOLICA</h3>
+                        <p>The final sector is defined by two iconic complexes. The Variante Ascari is a rapid left-right-left chicane that requires massive commitment over the curbs. The lap finishes with the legendary Curva Alboreto (formerly Parabolica), a long, sweeping right-hander that slingshots the cars back onto the main straight.</p>
+                        <ul class="key-corners">
+                            <li><strong>Turns 8, 9, 10:</strong> Variante Ascari</li>
+                            <li><strong>Turn 11:</strong> Curva Alboreto (Parabolica)</li>
+                        </ul>
+                    </div>
+                    <div class="sector-image">
+                        <img src="https://www.circusf1.com/f14/wp-content/uploads/2018/08/1467px-Monza_track_map.png" alt="Sector 3 Action">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="track.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Championship Standings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="standings.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">VELOCITYGP</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="teams.html">Teams</a>
+            <a href="#" class="active">Standings</a>
+        </nav>
+    </header>
+
+    <main class="standings-container">
+        
+        <div class="page-header">
+            <h1>2026 CHAMPIONSHIP</h1>
+            <div class="red-line"></div>
+            <p>Current standings for the 2026 FIA Formula One World Championship.</p>
+        </div>
+
+        <div class="tab-controls">
+            <button class="tab-btn active" data-target="drivers">DRIVERS</button>
+            <button class="tab-btn" data-target="constructors">CONSTRUCTORS</button>
+        </div>
+
+        <section id="drivers" class="standings-content active">
+            
+            <div class="table-header">
+                <span class="col-pos">POS</span>
+                <span class="col-driver">DRIVER</span>
+                <span class="col-team">TEAM</span>
+                <span class="col-pts">PTS</span>
+            </div>
+
+            <div class="standings-list">
+                <div class="standing-row ferrari scroll-reveal">
+                    <span class="col-pos">1</span>
+                    <span class="col-driver"><strong>Charles Leclerc</strong> <span class="car-no">16</span></span>
+                    <span class="col-team">Ferrari</span>
+                    <span class="col-pts"><strong>51</strong></span>
+                </div>
+
+                <div class="standing-row redbull scroll-reveal">
+                    <span class="col-pos">2</span>
+                    <span class="col-driver"><strong>Max Verstappen</strong> <span class="car-no">1</span></span>
+                    <span class="col-team">Red Bull Racing</span>
+                    <span class="col-pts"><strong>47</strong></span>
+                </div>
+
+                <div class="standing-row ferrari scroll-reveal">
+                    <span class="col-pos">3</span>
+                    <span class="col-driver"><strong>Lewis Hamilton</strong> <span class="car-no">44</span></span>
+                    <span class="col-team">Ferrari</span>
+                    <span class="col-pts"><strong>40</strong></span>
+                </div>
+
+                <div class="standing-row mclaren scroll-reveal">
+                    <span class="col-pos">4</span>
+                    <span class="col-driver"><strong>Lando Norris</strong> <span class="car-no">4</span></span>
+                    <span class="col-team">McLaren</span>
+                    <span class="col-pts"><strong>32</strong></span>
+                </div>
+
+                <div class="standing-row mercedes scroll-reveal">
+                    <span class="col-pos">5</span>
+                    <span class="col-driver"><strong>George Russell</strong> <span class="car-no">63</span></span>
+                    <span class="col-team">Mercedes</span>
+                    <span class="col-pts"><strong>28</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="constructors" class="standings-content">
+            
+            <div class="table-header">
+                <span class="col-pos">POS</span>
+                <span class="col-team-name">CONSTRUCTOR</span>
+                <span class="col-pts">PTS</span>
+            </div>
+
+            <div class="standings-list">
+                <div class="standing-row ferrari scroll-reveal">
+                    <span class="col-pos">1</span>
+                    <span class="col-team-name"><strong>Ferrari</strong></span>
+                    <span class="col-pts"><strong>91</strong></span>
+                </div>
+
+                <div class="standing-row redbull scroll-reveal">
+                    <span class="col-pos">2</span>
+                    <span class="col-team-name"><strong>Red Bull Racing</strong></span>
+                    <span class="col-pts"><strong>65</strong></span>
+                </div>
+
+                <div class="standing-row mclaren scroll-reveal">
+                    <span class="col-pos">3</span>
+                    <span class="col-team-name"><strong>McLaren</strong></span>
+                    <span class="col-pts"><strong>54</strong></span>
+                </div>
+
+                <div class="standing-row mercedes scroll-reveal">
+                    <span class="col-pos">4</span>
+                    <span class="col-team-name"><strong>Mercedes</strong></span>
+                    <span class="col-pts"><strong>40</strong></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="standings.js"></script>
+</body>
+</html>

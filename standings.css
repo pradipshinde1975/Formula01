@@ -1,0 +1,238 @@
+/* --- Base Reset & Theme --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: rgba(5, 5, 5, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #fff;
+}
+
+/* --- Page Header --- */
+.standings-container {
+    max-width: 1000px; /* Narrower for cleaner list reading */
+    margin: 0 auto;
+    padding: 60px 5% 100px 5%;
+}
+
+.page-header {
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.red-line {
+    width: 80px;
+    height: 4px;
+    background-color: #E32219;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+/* --- Tabs --- */
+.tab-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 2px solid #333;
+    color: #888;
+    padding: 12px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    border-color: #666;
+    color: #fff;
+}
+
+.tab-btn.active {
+    background: #E32219;
+    border-color: #E32219;
+    color: #fff;
+}
+
+/* --- Standings Content Sections --- */
+.standings-content {
+    display: none; /* Hidden by default */
+    animation: fadeIn 0.5s ease;
+}
+
+.standings-content.active {
+    display: block; /* Shows when active */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Table Headers --- */
+.table-header {
+    display: flex;
+    padding: 0 30px 15px 30px;
+    border-bottom: 2px solid #222;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* --- Data Rows --- */
+.standing-row {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 20px 30px;
+    border-left: 5px solid transparent; /* Used for team colors */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.standing-row:hover {
+    background-color: #1a1a1a;
+    transform: translateX(8px); /* Smooth nudge right on hover */
+}
+
+/* Team Accent Colors */
+.ferrari { border-left-color: #E32219; }
+.redbull { border-left-color: #0600EF; }
+.mclaren { border-left-color: #FF8000; }
+.mercedes { border-left-color: #00A19B; }
+
+/* --- Columns --- */
+.col-pos {
+    width: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #555;
+}
+
+.col-driver {
+    width: 45%;
+    font-size: 1.1rem;
+}
+
+.col-driver strong {
+    font-weight: 700;
+    color: #fff;
+}
+
+.car-no {
+    color: #888;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.col-team {
+    width: 30%;
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+.col-team-name {
+    width: 75%;
+    font-size: 1.2rem;
+}
+
+.col-team-name strong {
+    color: #fff;
+}
+
+.col-pts {
+    width: 15%;
+    text-align: right;
+}
+
+.col-pts strong {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #E32219; /* Highlights points in red */
+}
+
+/* --- Scroll Reveal Animation --- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .page-header h1 { font-size: 2.8rem; }
+    .col-team { display: none; } /* Hide team name on mobile for space */
+    .col-driver { width: 70%; }
+    .col-pos { width: 15%; }
+    .standing-row { padding: 15px; }
+}

@@ -1,0 +1,279 @@
+/* --- Base Reset & Theme --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: rgba(5, 5, 5, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #fff;
+}
+
+/* --- Page Layout --- */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 5% 100px 5%;
+}
+
+.page-header {
+    margin-bottom: 60px;
+}
+
+.page-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+}
+
+.red-line {
+    width: 80px;
+    height: 4px;
+    background-color: #E32219;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    color: #aaa;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+/* --- Contact Grid --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+}
+
+/* --- Left Column: Company Info --- */
+.info-block {
+    margin-bottom: 50px;
+}
+
+.info-block h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-left: 3px solid #E32219;
+    padding-left: 15px;
+}
+
+.company-bio {
+    color: #999;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.address {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.address strong {
+    color: #fff;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list .label {
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.contact-list a {
+    color: #E32219;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #fff;
+}
+
+/* --- Right Column: Contact Form --- */
+.contact-form-wrapper {
+    background-color: #111;
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #444;
+}
+
+/* Form Focus States */
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #E32219;
+    background-color: #222;
+}
+
+/* Fix for Select dropdown arrow in dark mode */
+.input-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #E32219;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #c01a12;
+    transform: translateY(-2px);
+}
+
+/* Success Message styling */
+.form-success {
+    display: none; /* Hidden initially */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 161, 155, 0.1); /* Subtle Mercedes teal/green */
+    border-left: 4px solid #00A19B;
+    color: #00A19B;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-success.show {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* --- Scroll Animations --- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 968px) {
+    .page-header h1 { font-size: 3.5rem; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .form-row { flex-direction: column; gap: 0; }
+    .contact-form-wrapper { padding: 30px 20px; }
+}

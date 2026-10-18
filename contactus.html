@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Paddock Insider</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">VELOCITYGP</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="teams.html">Teams</a>
+            <a href="standings.html">Standings</a>
+            <a href="#" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        
+        <div class="page-header scroll-reveal">
+            <h1>GET IN TOUCH</h1>
+            <div class="red-line"></div>
+            <p>Whether you're looking for media partnerships, press inquiries, or just want to talk racing—drop into our pit box.</p>
+        </div>
+
+        <div class="contact-grid">
+            
+            <div class="contact-info scroll-reveal">
+                
+                <div class="info-block">
+                    <h3>PADDOCK INSIDER HQ</h3>
+                    <p class="company-bio">
+                        Founded in 2024, Paddock Insider is a premier independent motorsport publication dedicated to bringing fans closer to the apex. We provide cutting-edge technical analysis, race coverage, and exclusive paddock interviews.
+                    </p>
+                    <p class="address">
+                        <strong>Silverstone Innovation Park</strong><br>
+                        Towcester, Northamptonshire<br>
+                        NN12 8TN, United Kingdom
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>DIRECT LINES</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="label">General Inquiries:</span>
+                            <a href="mailto:info@paddockinsider.com">info@paddockinsider.com</a>
+                        </li>
+                        <li>
+                            <span class="label">Press & Media:</span>
+                            <a href="mailto:media@paddockinsider.com">media@paddockinsider.com</a>
+                        </li>
+                        <li>
+                            <span class="label">Commercial Partnerships:</span>
+                            <a href="mailto:partners@paddockinsider.com">partners@paddockinsider.com</a>
+                        </li>
+                        <li>
+                            <span class="label">Phone:</span>
+                            <a href="tel:+441327123456">+44 (0) 1327 123 456</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="contact-form-wrapper scroll-reveal">
+                <form id="contact-form" class="contact-form">
+                    
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Charles">
+                        </div>
+                        <div class="input-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Leclerc">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="charles@scuderia.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select an inquiry type...</option>
+                            <option value="editorial">Editorial / News Tip</option>
+                            <option value="press">Press & Media</option>
+                            <option value="partnership">Advertising & Partnerships</option>
+                            <option value="general">General Question</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="How can we help you?"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                    
+                    <div id="form-success" class="form-success">
+                        <p>Message sent successfully. Our team will get back to you shortly.</p>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="contactus.js"></script>
+</body>
+</html>

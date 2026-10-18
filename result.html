@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Race Results | F1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">VELOCITYGP</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="teams.html">Teams</a>
+            <a href="standings.html">Standings</a>
+            <a href="#" class="active">Results</a>
+        </nav>
+    </header>
+
+    <main class="results-container">
+        
+        <div class="page-header">
+            <div class="gp-badge">ROUND 1 • COMPLETED</div>
+            <h1>AUSTRALIAN GRAND PRIX</h1>
+            <div class="red-line"></div>
+            <p>Albert Park Circuit, Melbourne • 58 Laps</p>
+        </div>
+
+        <div class="session-toggle">
+            <button class="toggle-btn active" data-session="race">RACE</button>
+            <button class="toggle-btn" data-session="qualifying">QUALIFYING</button>
+        </div>
+
+        <section id="race-results" class="session-content active">
+            
+            <div class="podium-showcase">
+                <div class="podium-step p2 scroll-reveal">
+                    <div class="driver-portrait">
+                        <img src="https://i.pinimg.com/736x/e5/c2/0f/e5c20f4ac690f3fc06f985f0e2b84d82.jpg" alt="Max Verstappen">
+                    </div>
+                    <div class="podium-block silver">
+                        <span class="pos-number">2</span>
+                        <h3>VERSTAPPEN</h3>
+                        <span class="team-name">Red Bull Racing</span>
+                        <span class="gap">+2.451s</span>
+                    </div>
+                </div>
+
+                <div class="podium-step p1 scroll-reveal">
+                    <div class="driver-portrait">
+                        <img src="https://i.pinimg.com/736x/e1/84/10/e18410bc019b9287f4e102b45223bbfe.jpg" alt="Charles Leclerc">
+                    </div>
+                    <div class="podium-block gold">
+                        <span class="pos-number">1</span>
+                        <h3>LECLERC</h3>
+                        <span class="team-name">Scuderia Ferrari</span>
+                        <span class="gap">1:24:15.320</span>
+                    </div>
+                </div>
+
+                <div class="podium-step p3 scroll-reveal">
+                    <div class="driver-portrait">
+                        <img src="https://i.pinimg.com/736x/a5/da/98/a5da98e9247920f6acadd9ed711eb076.jpg" alt="Lewis Hamilton">
+                    </div>
+                    <div class="podium-block bronze">
+                        <span class="pos-number">3</span>
+                        <h3>HAMILTON</h3>
+                        <span class="team-name">Scuderia Ferrari</span>
+                        <span class="gap">+5.890s</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="classification-list">
+                <div class="table-header">
+                    <span class="col-pos">POS</span>
+                    <span class="col-driver">DRIVER</span>
+                    <span class="col-team">TEAM</span>
+                    <span class="col-time">TIME/RETIRED</span>
+                    <span class="col-pts">PTS</span>
+                </div>
+
+                <div class="result-row mclaren scroll-reveal">
+                    <span class="col-pos">4</span>
+                    <span class="col-driver"><strong>L. Norris</strong> <span class="car-no">4</span></span>
+                    <span class="col-team">McLaren</span>
+                    <span class="col-time">+12.340s</span>
+                    <span class="col-pts">12</span>
+                </div>
+
+                <div class="result-row mercedes scroll-reveal">
+                    <span class="col-pos">5</span>
+                    <span class="col-driver"><strong>G. Russell</strong> <span class="car-no">63</span></span>
+                    <span class="col-team">Mercedes</span>
+                    <span class="col-time">+18.902s</span>
+                    <span class="col-pts">10</span>
+                </div>
+
+                <div class="result-row aston scroll-reveal">
+                    <span class="col-pos">6</span>
+                    <span class="col-driver"><strong>F. Alonso</strong> <span class="car-no">14</span></span>
+                    <span class="col-team">Aston Martin</span>
+                    <span class="col-time">+24.550s</span>
+                    <span class="col-pts">8</span>
+                </div>
+
+                <div class="result-row mclaren scroll-reveal">
+                    <span class="col-pos">7</span>
+                    <span class="col-driver"><strong>O. Piastri</strong> <span class="car-no">81</span></span>
+                    <span class="col-team">McLaren</span>
+                    <span class="col-time">+28.100s</span>
+                    <span class="col-pts">6</span>
+                </div>
+                
+                <div class="result-row dnf scroll-reveal">
+                    <span class="col-pos">DNF</span>
+                    <span class="col-driver"><strong>C. Sainz</strong> <span class="car-no">55</span></span>
+                    <span class="col-team">Williams</span>
+                    <span class="col-time">Hydraulics</span>
+                    <span class="col-pts">0</span>
+                </div>
+            </div>
+            
+            <div class="race-highlights scroll-reveal">
+                <div class="highlight-box">
+                    <h4>FASTEST LAP</h4>
+                    <p><strong>C. Leclerc</strong> (Ferrari) - 1:19.802</p>
+                </div>
+                <div class="highlight-box">
+                    <h4>DRIVER OF THE DAY</h4>
+                    <p><strong>L. Hamilton</strong> (Ferrari) - 34% of votes</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="qualifying-results" class="session-content">
+            <div class="classification-list">
+                <div class="table-header">
+                    <span class="col-pos">POS</span>
+                    <span class="col-driver">DRIVER</span>
+                    <span class="col-team">TEAM</span>
+                    <span class="col-time">Q3 TIME</span>
+                </div>
+
+                <div class="result-row ferrari scroll-reveal">
+                    <span class="col-pos">1</span>
+                    <span class="col-driver"><strong>C. Leclerc</strong> <span class="car-no">16</span></span>
+                    <span class="col-team">Ferrari</span>
+                    <span class="col-time"><strong>1:17.432</strong></span>
+                </div>
+
+                <div class="result-row redbull scroll-reveal">
+                    <span class="col-pos">2</span>
+                    <span class="col-driver"><strong>M. Verstappen</strong> <span class="car-no">1</span></span>
+                    <span class="col-team">Red Bull Racing</span>
+                    <span class="col-time">+0.105s</span>
+                </div>
+
+                <div class="result-row mclaren scroll-reveal">
+                    <span class="col-pos">3</span>
+                    <span class="col-driver"><strong>L. Norris</strong> <span class="car-no">4</span></span>
+                    <span class="col-team">McLaren</span>
+                    <span class="col-time">+0.220s</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="result.js"></script>
+</body>
+</html>

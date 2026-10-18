@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOCITY GP - Premium UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <div id="f1-loader-screen">
+    <div class="flag-wrapper">
+        <div class="f1-flag"></div>
+        <div class="flag-shadow"></div>
+    </div>
+
+    <div class="gantry-container">
+        <div class="light-strip">
+            <div class="f1-light" id="light1"></div>
+            <div class="f1-light" id="light2"></div>
+            <div class="f1-light" id="light3"></div>
+            <div class="f1-light" id="light4"></div>
+            <div class="f1-light" id="light5"></div>
+        </div>
+        <div class="race-status" id="race-msg">Preparing for Start...</div>
+    </div>
+</div> -->
+<header class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="Wallpaper F1 4K TEST EDIT AMD(2K_60FPS).webm" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="f1-text"></h1>
+            
+        </div>
+    </header>
+    <header class="navbar">
+        <div class="logo"> VELOCITYGP </div>
+        <nav class="nav-links">
+            <a href="teams.html">Team</a>
+            <!-- <a href="#">SF-24</a> -->
+            <a href="news.html">News</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+     
+
+    
+        
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <span class="marquee-text">FEEL THE SPEED.LIVE THE RACE</span>
+                <span class="marquee-text">FEEL THE RACE.LIVE THE RACE</span>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="hero-content">
+                
+                <h1 class="hero-title">BORN TO<br>RACE.</h1>
+            
+            </div>
+            
+
+            <div class="hero-car">
+                <img src="download__1_-removebg-preview.png" alt="Ferrari SF-24" id="dynamic-car">
+            </div>
+        </div>
+    </section> <section class="f1-gallery-scroll" id="gallery-section">
+        <div class="sticky-wrapper">
+            
+            <div class="scroll-slide slide-1 active">
+                <div class="left-info-panel">
+                    <div class="driver-photo">
+                        <img src="https://i.pinimg.com/736x/48/27/10/482710edc912d09c3688f114e25062a5.jpg" alt="Driver 1">
+                    </div>
+                    <div class="info-text">
+                        <h2>CHARLES LECLERC</h2>
+                        <p>Monégasque racing driver currently competing in Formula One for Scuderia Ferrari. Known for his exceptional qualifying pace and aggressive track defense.</p>
+                    </div>
+                </div>
+                <div class="right-reel-panel">
+                    <img src="https://i.pinimg.com/736x/cc/9e/aa/cc9eaa618ae58d609fd9852a15a55d6f.jpg" alt="F1 Start">
+                </div>
+            </div>
+
+            <div class="scroll-slide slide-2">
+                <div class="left-info-panel">
+                    <div class="driver-photo">
+                        <img src="https://i.pinimg.com/736x/d6/77/f8/d677f8d96118d404aced08d91459a69e.jpg" alt="Driver 2">
+                    </div>
+                    <div class="info-text">
+                        <h2>LEWIS HAMILTON</h2>
+                        <p>The legendary seven-time World Champion brings unparalleled experience and race craft to the Scuderia, creating one of the most formidable lineups in history.</p>
+                    </div>
+                </div>
+                <div class="right-reel-panel">
+                    <img src="https://i.pinimg.com/1200x/5c/0a/42/5c0a42e40193de7ef8aed38dba4669f8.jpg" alt="F1 Steering Wheel">
+                </div>
+            </div>
+
+            <div class="scroll-slide slide-3">
+                <div class="left-info-panel">
+                    <div class="driver-photo">
+                        <img src="https://i.pinimg.com/1200x/26/2c/f9/262cf980fea9e808679d58f3fc37e8ee.jpg" alt="Team Principal">
+                    </div>
+                    <div class="info-text">
+                        <h2>FRED VASSEUR</h2>
+                        <p>Leading the team from the pit wall, executing aggressive strategies, and pushing the engineering team to extract every millisecond of performance.</p>
+                    </div>
+                </div>
+                <div class="right-reel-panel">
+                    <img src="https://i.pinimg.com/736x/d1/5e/f3/d15ef34614e357f2b1f0aaeaad4d0c99.jpg" alt="F1 Car on Track">
+                </div>
+            </div>
+
+            <div class="scroll-slide slide-4">
+                <div class="left-info-panel">
+                    <div class="driver-photo"><img src="https://i.pinimg.com/1200x/e4/bc/cf/e4bccfebd898887eef085dce72204a51.jpg" alt="Driver"></div>
+                    <div class="info-text"><h2>THE SF-24</h2><p>Aerodynamic mastery designed in Maranello, featuring a refined ground-effect floor and aggressive sidepod sculpting.</p></div>
+                </div>
+                <div class="right-reel-panel"><img src="https://i.pinimg.com/originals/9d/7a/ba/9d7aba0d9d378708d0bafe5511baeb16.png" alt="F1 Helmet"></div>
+            </div>
+
+            <div class="scroll-slide slide-5">
+                <div class="left-info-panel">
+                    <div class="driver-photo"><img src="https://i.pinimg.com/1200x/e0/c9/26/e0c92699307b1ad122dd0b37180ef638.jpg" alt="Driver"></div>
+                    <div class="info-text"><h2>POWER UNIT</h2><p>The 1.6L V6 hybrid turbo remains the beating heart of the car, delivering over 1000 horsepower with brutal efficiency.</p></div>
+                </div>
+                <div class="right-reel-panel"><img src="https://i.pinimg.com/1200x/73/13/c0/7313c0fa473207b823ca979517b79aaf.jpg" alt="F1 Pitlane"></div>
+            </div>
+
+            <div class="scroll-slide slide-6">
+                <div class="left-info-panel">
+                    <div class="driver-photo"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=500&auto=format&fit=crop" alt="Team"></div>
+                    <div class="info-text"><h2>PIT CREW</h2><p>Precision under pressure. Tire changes executed in under 2.5 seconds can mean the difference between victory and defeat.</p></div>
+                </div>
+                <div class="right-reel-panel"><img src="https://i.pinimg.com/736x/99/ab/28/99ab28cebfefe6e6f61e82ba3967295d.jpg" alt="F1 Night Race"></div>
+            </div>
+
+            <div class="scroll-slide slide-7">
+                <div class="left-info-panel">
+                    <div class="driver-photo"><img src="https://i.pinimg.com/736x/8f/38/19/8f38190153b08fd0cb007346e1b5b21d.jpg" alt="Driver"></div>
+                    <div class="info-text"><h2>TIFOSI</h2><p>The most passionate fanbase in the world. When Ferrari races, an entire nation holds its breath.</p></div>
+                </div>
+                <div class="right-reel-panel"><img src="https://i.pinimg.com/1200x/6e/32/ea/6e32eac441d53de1d490866b23131dcf.jpg" alt="F1 Engine Details"></div>
+            </div>
+
+            <div class="scroll-slide slide-8">
+                <div class="left-info-panel">
+                    <div class="driver-photo"><img src="https://i.pinimg.com/736x/91/40/1e/91401e3dafd3bb736fb3fc824accb010.jpg" alt="Driver"></div>
+                    <div class="info-text"><h2>ESSERE FERRARI</h2><p>More than just a racing team. It is a legacy, a culture, and a relentless pursuit of perfection on the track.</p></div>
+                </div>
+                <div class="right-reel-panel"><img src="https://i.pinimg.com/736x/88/24/ae/8824ae383d5863f1bf6832f0b7862b0b.jpg" alt="F1 Checkered Flag"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<section class="mindset-section" id="mindset-section">
+    <div class="mindset-sticky">
+        
+        <div class="mindset-bg">
+            <img src="https://images.pexels.com/photos/29406740/pexels-photo-29406740.jpeg" alt="Ferrari Background">
+            <div class="mindset-overlay"></div>
+        </div>
+
+        <div class="mindset-text-container">
+            <h1 id="mindset-text">IT'S THE MIND THAT MAKES DIFFICULT</h1>
+        </div>
+
+    </div>
+</section>
+
+<section class="corner-grid-section" id="corner-grid-section">
+    <div class="grid-sticky">
+        
+        <div class="grid-container" id="grid-container">
+            
+            <div class="grid-row">
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/ec/94/d2/ec94d29335f877dfb7e02b00920cc889.jpg" alt="F1 Car 1"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/46/a4/03/46a403ab16f350293cb1368b2c23b2b3.jpg" alt="F1 Car 2"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/66/cd/b3/66cdb36c9e225331cae9232c4dfd37fa.jpg" alt="F1 Car 3"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/736x/da/4d/16/da4d169aae208eeeb30cf34e8a7dfc0a.jpg" alt="F1 Driver"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/2d/37/90/2d37905b7559a39e4841a396c226fa3e.jpg" alt="F1 Race"></div>
+            </div>
+
+            <div class="grid-row offset">
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/99/79/8a/99798a2a96420406fc0e6e5aa6e14e0e.jpg" alt="F1 Helmet"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/736x/11/42/78/114278d55d2b061b99023dd1e8ea468c.jpg" alt="F1 Pitstop"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/14/20/a3/1420a36c038192944d8ebbf6db1b0241.jpg" alt="F1 Engine"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/736x/3e/ff/db/3effdb28d92e9b4c3ffd29bcdd12e2bd.jpg" alt="F1 Flag"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/9e/e7/bb/9ee7bbf32b24ab6776381ff468db6923.jpg" alt="F1 Team"></div>
+            </div>
+
+            <div class="grid-row">
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/39/ec/6e/39ec6e97dd31b961d9f7f36ba4bb487d.jpg" alt="F1 Driver 2"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/736x/3d/33/88/3d338804e04a618006b3fa602a30160d.jpg" alt="F1 Track"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/736x/40/12/31/401231b9180d6548197755159ad6ee60.jpg" alt="F1 Apex"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/1200x/16/db/4a/16db4a8f96f78fa530d4b0b2e13a4914.jpg" alt="F1 Action"></div>
+                <div class="grid-box"><img src="https://i.pinimg.com/736x/79/f2/e3/79f2e3c491efad72cb5f781c86416cd9.jpg" alt="F1 Lights"></div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
+
+<!-- <div class="track-background">
+        <img src="https://images.unsplash.com/photo-1538356346215-626f2177be5c?q=80&w=2000&auto=format&fit=crop" alt="Race Track">
+        <div class="dark-tint"></div>
+    </div> -->
+
+    <div class="f1-info-layout">
+        
+        <div class="left-info-column">
+            
+            <div class="page-header">
+                <h1>THE HISTORY<br>OF FORMULA 1</h1>
+                <p>Scroll down to ride through the eras ↓</p>
+            </div>
+
+            <div class="glass-box wave-animate">
+                <h2>THE ORIGINS (1950s)</h2>
+                <p>Formula One racing officially began in 1950 with the inaugural World Championship at Silverstone. The early era was dominated by legendary manufacturers like Alfa Romeo, Ferrari, and Maserati. Drivers like Juan Manuel Fangio set the early benchmark in a time when racing was incredibly raw.</p>
+            </div>
+
+            <div class="glass-box wave-animate">
+                <h2>THE AERODYNAMIC ERA (1970s)</h2>
+                <p>The introduction of ground-effect aerodynamics revolutionized the sport. Cars began generating massive amounts of downforce, sucking them to the track and allowing for unprecedented cornering speeds. This era saw fierce rivalries, most notably between Niki Lauda and James Hunt.</p>
+            </div>
+
+            <div class="glass-box wave-animate">
+                <h2>TECHNOLOGICAL WARFARE (1990s)</h2>
+                <p>Electronic driver aids, active suspension, and incredibly complex V10 engines defined this era. Michael Schumacher and Ferrari formed an unstoppable dynasty, while safety became a paramount focus following the tragic weekend at Imola in 1994.</p>
+            </div>
+
+            <div class="glass-box wave-animate">
+                <h2>THE HYBRID ERA (2014 - Present)</h2>
+                <p>F1 entered its most advanced phase with 1.6-liter V6 turbo-hybrid power units. These engines are marvels of engineering, achieving over 50% thermal efficiency and producing over 1000 horsepower, leading to intense battles between Red Bull Racing, Ferrari, and McLaren.</p>
+            </div>
+            
+            <div style="height: 20vh;"></div>
+
+        </div>
+
+        <div class="right-trophy-column">
+            <div class="sticky-trophy-container">
+                <img src="https://i.pinimg.com/736x/0a/6a/f1/0a6af16a86e653bcf5948340fb45ba05.jpg" alt="F1 World Championship Trophy" class="trophy-img">
+            </div>
+        </div>
+
+    </div>
+<!--  FEATURED VIDEOS  -->
+    <section class="video-section" id="video-section">
+        <div class="video-sticky-container">
+            
+            <div class="video-header-left">
+                <div class="header-content">
+                    <div class="red-line"></div>
+                    <h1>FEATURED<br>VIDEOS</h1>
+                    <p>Exclusive behind-the-scenes, race highlights, and driver interviews. Scroll to slide.</p>
+                </div>
+            </div>
+
+            <div class="video-slider-right">
+                <div class="slider-track" id="slider-track">
+                    
+                    <div class="video-card">
+                        
+
+                        <!-- <img src="https://i.pinimg.com/736x/f5/f3/ec/f5f3ecdc853d7ded68f0ae9158a7bb92.jpg" alt="Pitstop Video Thumbnail"> -->
+                        
+                        <div class="video-overlay">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wsCriICZ-nA?si=BkAGuvFhO-jryt3S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                            <!-- <div class="play-btn">▶</div> -->
+                            <div class="video-info">
+                                <h3>THE PERFECT PITSTOP</h3>
+                                <span>2:45 • Behind the Scenes</span>
+        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <img src="https://i.pinimg.com/1200x/e4/13/ba/e413ba37cabd354b82a932f4a43c22e6.jpg" alt="Night Race Thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-btn">▶</div>
+                            <div class="video-info">
+                                <h3>SINGAPORE HIGHLIGHTS</h3>
+                                <span>5:12 • Race Recap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <img src="https://i.pinimg.com/1200x/1c/3b/14/1c3b148b0d3df79504228ff66fb134b5.jpg" alt="Steering Wheel Thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-btn">▶</div>
+                            <div class="video-info">
+                                <h3>MASTERING THE SF-24</h3>
+                                <span>8:30 • Technical Breakdown</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <img src="https://i.pinimg.com/736x/2f/6d/07/2f6d072c2e3ab6b8b6854bd9b3f959c1.jpg" alt="Driver Thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-btn">▶</div>
+                            <div class="video-info">
+                                <h3>LECLERC: ROAD TO MONZA</h3>
+                                <span>12:05 • Documentary Short</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <img src="https://i.pinimg.com/1200x/f1/f4/ce/f1f4ce79e0c0ccfdbe0fa470d5dcfaa0.jpg" alt="Victory Thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-btn">▶</div>
+                            <div class="video-info">
+                                <h3>THE WINNING STRATEGY</h3>
+                                <span>4:20 • Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="canvas-video-section" id="canvas-section">
+    <div class="canvas-sticky-container">
+        
+        <canvas id="video-canvas"></canvas>
+        
+        <div class="canvas-overlay-text">
+            <h2>AERODYNAMIC<br>PERFECTION</h2>
+            <p>Every curve sculpted by the wind. Scroll to analyze the chassis.</p>
+        </div>
+
+    </div>
+</section>
+<!-- footer -->
+ <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">VELOCITYGP</h2>
+                    <p>The relentless pursuit of speed, perfection, and legacy on the track.</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>JOIN THE VELOCITYGP</h3>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4>THE TEAM</h4>
+                    <a href="#">Drivers</a>
+                    <a href="#">Management</a>
+                    <a href="#">Pit Crew</a>
+                    <a href="#">Maranello HQ</a>
+                </div>
+                <div class="footer-column">
+                    <h4>THE MACHINES</h4>
+                    <a href="#">Power Unit Specs</a>
+                    <a href="#">Aerodynamics</a>
+                    <a href="#">Heritage Cars</a>
+                </div>
+                <div class="footer-column">
+                    <h4>RACE HUB</h4>
+                    <a href="calendar.html">2026 Calendar</a>
+                    <a href="result.html">Latest Results</a>
+                    <a href="standings.html">Standings</a>
+                    <a href="track.html">Track Profiles</a>
+                </div>
+                <div class="footer-column">
+                    <h4>CORPORATE</h4>
+                    <a href="#">Partners & Sponsors</a>
+                    <a href="#">Press Office</a>
+                    <a href="#">Careers</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2026 Scuderia Ferrari. All rights reserved. | Engineered by Elevate Works.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+                
+                <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 19V5M5 12l7-7 7 7"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
